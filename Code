@@ -1,0 +1,20 @@
+// Basic Pairs
+#include <iostream>
+using namespace std;
+int main() {
+    pair <int,int>p;
+    p=make_pair(2,3);
+//    p={2,3};
+    pair<int,int>p1=p;
+    cout<<p.first<<" "<<p.second<<endl;
+    cout<<p1.first<<" "<<p1.second<<endl;
+    p1.first=3;
+    cout<<p1.first<<" "<<p1.second<<endl;
+    cout<<p.first<<" "<<p.second<<endl;
+    pair<int,int>&p2=p;
+    cout<<p2.first<<" "<<p2.second<<endl;
+    p2.first=5;
+    cout<<p2.first<<" "<<p2.second<<endl;
+    cout<<p.first<<" "<<p.second<<endl;
+    return 0;
+}
